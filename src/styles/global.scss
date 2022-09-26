@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, p, span,
+input, textarea, select {
+  font: 400 1rem 'Inter', 'Sans-Serif';
+  color: var(--gray)
+}
+
+a, span {
+  font-weight: 600;
+  color: var(--gray);
+  text-decoration: none;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  color: var(--white);
+} 
+
+html {
+  --white: #FFFFFF;
+  --black: #000000;
+  --yellow: #FFAC12;
+  --gray: #E4E4E4;
+  --dark-gray: #444444;
+  --brown: #271A00;
+}

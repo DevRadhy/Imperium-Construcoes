@@ -1,0 +1,149 @@
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(0deg, var(--black), transparent);
+  
+  padding: 0 10%;
+
+  z-index: 1;
+  
+  h1 {
+    max-width: 30rem;
+    font-size: 6rem;
+    margin-top: 14rem;
+  }
+  
+  p {
+    color: gray;
+    font-size: 600;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.workSection {
+  width: 100%;
+  height: 100%;
+
+  background: var(--gray);
+  
+  padding: 15rem 10%;
+
+  h2 {
+    font-size: 3rem;
+    color: var(--black);
+    
+    &::before {
+      display: block;
+      content: '';
+      
+      width: 8rem;
+      height: 0.3rem;
+      
+      background: linear-gradient(90deg, var(--yellow), var(--black));
+    }
+  }
+  
+  .work {
+    max-width: 1080px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    margin: 10rem auto;
+
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+}
+
+.presentation {
+  width: 100%;
+
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 3rem;
+    color: var(--white);
+  }
+
+  p {
+    color: var(--gray);
+  }
+
+  button {
+    width: 10rem;
+    height: 3.2rem;
+
+    margin: 5rem auto;
+
+    background: var(--black);
+
+    border: none;
+    border-radius: 0 20px 0 0;
+
+    cursor: pointer;
+    
+    span {
+      color: var(--yellow);
+      margin-right: 8px;
+    }
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
+  &::before {
+    display: block;
+    content: '';
+
+    width: 8rem;
+    height: 0.3rem;
+
+    margin: 1rem auto;
+
+    background: linear-gradient(90deg, var(--yellow), var(--black));
+  }
+}
+
+.presentation, .testemunial {
+  width: 100%;
+  height: 40rem;
+}
+
+.presentation {
+  background: linear-gradient(45deg, var(--black), var(--brown));
+}
