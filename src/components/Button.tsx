@@ -13,7 +13,11 @@ interface IButtonProps {
 const Button = ({ text }: IButtonProps) => {
   return (
     <button type="button" className={styles.work}>
-      <a href="https://wa.link/1grfbr">
+      <a
+        href="https://wa.link/1grfbr"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>{text}</span>
 
         <Image
